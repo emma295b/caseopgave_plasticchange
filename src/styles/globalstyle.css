@@ -2,6 +2,7 @@
 
 --bg-color-black-100: #1C1E23;
 --bg-color-black-80: #1C1E23, 0.8;
+--bg-color-black-50: #1C1E23, 0.5;
 --bg-color-white-100: #fefefe;
 --text-color-white-100: #fefefe;
 --text-color-black-100: #1c1e23;
@@ -9,12 +10,31 @@
 --button-primary-color: #FF1054;
 --button-secondary-color: #007c79;
 --button-tiertary-color: #a3a6b4;
+--header-size: 35px;
+--subheader-size: 25px;
+--paragraph-size: 16px; 
 
 }
 
+h1{
+    font-family: "Header";
+    font-size: var(--header-size);
+}
+
+h2{
+    font-family: "Subheader";
+    font-size: var(--subheader-size);
+}
+
+p{
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size);
+}
+
+
 @font-face {
-    font-family: "HeaderLarge";
-    src: url(/font/camptonbold-webfont.woff2);
+    font-family: "Header";
+    src: url(/font/camptonextrabold-webfont.woff2);
 }
 
 @font-face {

@@ -1,0 +1,26 @@
+:root{
+
+--bg-color-black-100: #1C1E23;
+--bg-color-black-80: #1C1E23, 0.8;
+--bg-color-white-100: #fefefe;
+--text-color-white-100: #fefefe;
+--text-color-black-100: #1c1e23;
+--brand-color-red: #FF1054;
+--brand-color-green: #007c79;
+
+}
+
+@font-face {
+    font-family: "HeaderLarge";
+    src: url(/font/camptonbold-webfont.woff2);
+}
+
+@font-face {
+    font-family: "Subheader";
+    src: url(/font/camptonmedium-webfont.woff2);
+}
+
+@font-face {
+    font-family: "Paragraph";
+    src: url(/font/campton);
+}

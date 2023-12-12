@@ -16,21 +16,16 @@
 --header-size-large: 60px;
 --subheader-size-large: 36px;
 --paragraph-size-large: 18px;
---padding-size-xlarge: 60px;
---padding-size-large: 40px;
---padding-size-medium: 20px;
---padding-size-small: 10px;
---padding-size-xsmall: 5px;
---gap-size-large: 40px;
---gap-size-medium: 20px;
---gap-size-small: 10px;
---border-radius-button:25px;
---border-radius-card: 40px;
---border-radius-burger: 15px;
---burger-lines-size: 4px;
---burger-line-height:26px;
---burger-line-width: 32px;
---burger-checkbox:32px;
+--padding-size-xlarge: 3.75rem;
+--padding-size-large: 2.5rem;
+--padding-size-medium: 1.25rem;
+--padding-size-small: 0.6rem;
+--padding-size-xsmall: 0.3rem;
+--gap-size-large: 2.5rem;
+--gap-size-medium: 1.25rem;
+--gap-size-small: 0.6rem;
+--border-radius-button:1.5rem;
+--border-radius-card: 2.5rem;
 
 }
 

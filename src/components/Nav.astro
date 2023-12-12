@@ -1,7 +1,6 @@
 ---
 import "../styles/globalstyle.css";
 import Button from "../components/Button.astro";
-import Burger from "../components/Burger.astro";
 ---
 
 <section class="mobile"> 
@@ -12,7 +11,9 @@ import Burger from "../components/Burger.astro";
         <a href="">Hvad kan du gøre?</a>
     </div>
     <div>
-        <Button/>
+        <Button variant="primary"
+        icon="public/icons/hjerte.svg">
+            Støt nu</Button>
     </div>
 </section>
 
@@ -25,7 +26,9 @@ import Burger from "../components/Burger.astro";
                 <a href="">Hvad kan du gøre?</a>
             </div>
             <div>
-                <Button/>
+                <Button variant="primary"
+                icon="public/icons/hjerte.svg">
+                Støt nu </Button>
             </div>
         </div>
 </section>

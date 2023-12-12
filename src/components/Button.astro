@@ -1,21 +1,35 @@
 ---
+const {variant, icon} = Astro.props;
 import "../styles/globalstyle.css";
 ---
 
-<button>
-    <p>Støt</p>
+<button class={variant}>
+    <img src={icon} alt="">
+    <slot/>
 </button>
 
 <style>
-button{
+.primary{
     color: var(--text-color-white-100);
     background-color: var(--button-primary-color);
     border-radius: var(--border-radius-button);
     padding-inline: var(--padding-size-medium);
+    padding-block: var(--padding-size-small);
     font-family: "Paragraph";
     font-size: var(--paragraph-size-small);
     border: none;
-    justify-content: ;
+}
+
+.secondary{
+    color: var(--button-secondary-color);
+    background-color: var(--bg-color-white-100);
+    border: var(--button-secondary-color);
+    border-radius: var(--border-radius-button);
+    padding-inline: var(--padding-size-medium);
+    padding-block: var(--padding-size-small);
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size-small);
+    border: none;
 }
     
 </style>

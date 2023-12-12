@@ -46,3 +46,15 @@ p{
     font-family: "Paragraph";
     src: url(/font/campton);
 }
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-white-100);
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size);
+  }

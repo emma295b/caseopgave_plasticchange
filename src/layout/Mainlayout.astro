@@ -17,18 +17,17 @@ import "../styles/globalstyle.css/";
         <Nav/>
         <main>
             <slot/>
-        <main/>
+		</main>
         <Footer/>
 	</body>
 </html>
 
 <style>
-body{
-    background-color: var(--bg-color-black-100);
-}
 
+@media screen and (min-width: 640px){
 main{
     background-color: var(--bg-color-white-100);
+	margin-inline: var(--padding-size-xlarge);
 }
-
+}
 </style>

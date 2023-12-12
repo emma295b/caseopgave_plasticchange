@@ -1,7 +1,7 @@
 :root{
 
 --bg-color-black-100: #1C1E23;
---bg-color-black-80: #1C1E23, 0.8;
+--bg-color-black-80: #36373a;
 --bg-color-black-50: #1C1E23, 0.5;
 --bg-color-white-100: #fefefe;
 --text-color-white-100: #fefefe;
@@ -25,6 +25,7 @@
 --gap-size-medium: 1.25rem;
 --gap-size-small: 0.6rem;
 --border-radius-button:1.5rem;
+--border-size-button: 0.15rem;
 --border-radius-card: 2.5rem;
 
 }

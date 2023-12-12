@@ -42,6 +42,40 @@ import "../styles/globalstyle.css";
 
 
 <section class="website">
+    <div>
+        <img src="public/pictures/Logowebsite.jpg" alt="logo single use">
+    </div>
+    <div class="praktisk">
+        <div>
+            <p>
+                Mail: info@plasticchange.org
+            </p>
+        </div>
+        <div>
+            <p>
+                Tlf: +45 42 66 72 46 
+            </p>
+        </div>
+        <div>
+            <p>
+                Telefon åben Mandag - Fredag
+            </p>
+            <p>
+                10:00-15:00
+            </p>
+        </div>
+    </div>
+    <div>
+        <p>
+            Kom med os og støt om #SingleUseSucks på vores sociale medier!
+        </p>
+    <div class="some">
+        <a href="https://www.facebook.com/plasticchange/"><img src="public/icons/facebook.svg" alt="facebook link"></a>
+        <a href="https://twitter.com/plasticchange"><img src="public/icons/twitter.svg" alt="twitter link"></a>
+        <a href="https://www.linkedin.com/company/plastic-change/"><img src="public/icons/linkedin.svg" alt="linkedin link"></a>
+        <a href="https://www.youtube.com/channel/UCgLD-akVpdrJPPds2qoNA8g"><img src="public/icons/youtube.svg" alt="youtube link"></a>
+        <a href="https://www.instagram.com/plasticchange"><img src="public/icons/instagram.svg" alt="instagram link"></a>
+    </div>
 
 </section>
 
@@ -85,7 +119,15 @@ p, a{
 
 @media screen and (min-width: 640px){
     .website{
-        display: block;
+    display: block;
+    background-color: var(--bg-color-black-100);
+    padding: var(--padding-size-medium);
+    background-image: url("../public/pictures/plastikbottles.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;;
 
 }
 .mobile{

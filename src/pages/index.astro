@@ -1,25 +1,41 @@
 ---
-import Footer from "../components/Footer.astro";
-import Nav from "../components/Nav.astro";
+import Mainlayout from "../layout/Mainlayout.astro";
 import "../styles/globalstyle.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="generator" content={Astro.generator} />
-		<title>Single Use Sucks!</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<Nav></Nav>
-		<Footer></Footer>
-	</body>
-</html>
+<Mainlayout>
+</Mainlayout>
 
 <style>
+h1{
+    font-family: "Header";
+    font-size: var(--header-size-large);
+}
 
+h2{
+    font-family: "Subheader";
+    font-size: var(--subheader-size-large);
+}
+
+p, a{
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size-large);
+}
+
+@media screen (max-width: 430;) {
+h1{
+    font-family: "Header";
+    font-size: var(--header-size-small);
+}
+
+h2{
+    font-family: "Subheader";
+    font-size: var(--subheader-size-small);
+}
+
+p{
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size-small);
+}
+}
 </style>

@@ -10,25 +10,28 @@
 --button-primary-color: #FF1054;
 --button-secondary-color: #007c79;
 --button-tiertary-color: #a3a6b4;
---header-size: 35px;
---subheader-size: 25px;
---paragraph-size: 16px; 
+--header-size-small: 35px;
+--subheader-size-small: 25px;
+--paragraph-size-small: 16px;
+--header-size-large: 60px;
+--subheader-size-large: 36px;
+--paragraph-size-large: 18px;
+--padding-size-xlarge: 60px;
+--padding-size-large: 40px;
+--padding-size-medium: 20px;
+--padding-size-small: 10px;
+--padding-size-xsmall: 5px;
+--gap-size-large: 40px;
+--gap-size-medium: 20px;
+--gap-size-small: 10px;
+--border-radius-button:25px;
+--border-radius-card: 40px;
+--border-radius-burger: 15px;
+--burger-lines-size: 4px;
+--burger-line-height:26px;
+--burger-line-width: 32px;
+--burger-checkbox:32px;
 
-}
-
-h1{
-    font-family: "Header";
-    font-size: var(--header-size);
-}
-
-h2{
-    font-family: "Subheader";
-    font-size: var(--subheader-size);
-}
-
-p{
-    font-family: "Paragraph";
-    font-size: var(--paragraph-size);
 }
 
 
@@ -44,7 +47,7 @@ p{
 
 @font-face {
     font-family: "Paragraph";
-    src: url(/font/campton);
+    src: url(/font/camptonbook-webfont.woff2);
 }
 
 * {

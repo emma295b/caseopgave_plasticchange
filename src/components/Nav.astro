@@ -1,0 +1,77 @@
+---
+import "../styles/globalstyle.css";
+import Button from "../components/Button.astro";
+import Burger from "../components/Burger.astro";
+---
+
+<section class="mobile"> 
+    <div>
+        <img src="public/pictures/Logomobile.jpg" alt="logo single use sucks">
+    </div>
+    <div class="centeralign">
+        <a href="">Hvad kan du gøre?</a>
+    </div>
+    <div>
+        <Button/>
+    </div>
+</section>
+
+<section class="website"> 
+    <div>
+        <img src="public/pictures/Logowebsite.jpg" alt="logo single use sucks">
+        
+    </div>
+    <div>
+        
+    </div>
+</section>
+
+<style>
+.website{
+    display: none;
+}
+
+.mobile{
+    background-color: var(--bg-color-black-100);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.centeralign{
+    display: flex;
+    align-items:center;
+}
+
+div{
+    margin: var(--padding-size-medium);
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    color: var(--text-color-white-100);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--text-color-white-100);
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 640px){
+    .website{
+        display: block;
+
+}
+.mobile{
+    display: none;
+}
+}
+
+</style>

@@ -1,0 +1,74 @@
+---
+import "../styles/globalstyle.css";
+import Button from "../components/Button.astro";
+---
+
+<section class="mobile">
+    <div></div>
+    <div class="content">
+        <h1>
+            Skriv under nu!
+        </h1>
+        <h2>
+            Kræv en ambitiøs global plastiktraktat.
+        </h2>
+        <Button variant="primary">Skriv under her </Button>
+    </div>
+</section>
+
+<section class="website">
+    <div></div>
+    <div class="content">
+        <h1>
+            Skriv under nu!
+        </h1>
+        <h2>
+            Kræv en ambitiøs global plastiktraktat.
+        </h2>
+        <Button variant="primary">Skriv under her.</Button>
+    </div>
+</section>
+
+<style>
+.website{
+    display: none;
+}
+
+.mobile{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url("public/pictures/skilpadde1.webp");
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-white-100);
+    padding: var(--padding-size-xlarge);
+}
+
+.content{
+    background-color: var(--bg-color-black-80);
+    padding-block: var(--padding-size-medium);
+    padding-inline: var(--padding-size-large);
+}
+
+@media screen and (min-width: 640px){
+
+    .website{
+    display: flex;
+    background-image: url("public/pictures/skilpadde1.webp");
+    background-size: cover;
+    color: var(--text-color-white-100);
+    padding: var(--padding-size-xlarge);
+}
+
+.content{
+    background-color: var(--bg-color-black-80);
+    display: inline-block;
+}
+
+.mobile{
+    display: none;
+}
+
+}
+
+</style>

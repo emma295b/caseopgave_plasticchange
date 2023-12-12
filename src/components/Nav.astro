@@ -19,11 +19,15 @@ import Burger from "../components/Burger.astro";
 <section class="website"> 
     <div>
         <img src="public/pictures/Logowebsite.jpg" alt="logo single use sucks">
-        
     </div>
-    <div>
-        
-    </div>
+        <div class="group">
+            <div class="centeralign">
+                <a href="">Hvad kan du gøre?</a>
+            </div>
+            <div>
+                <Button/>
+            </div>
+        </div>
 </section>
 
 <style>
@@ -32,7 +36,7 @@ import Burger from "../components/Burger.astro";
 }
 
 .mobile{
-    background-color: var(--bg-color-black-100);
+    background-color: var(--bg-color-black-100), 0.8;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -66,9 +70,20 @@ a:hover{
 
 @media screen and (min-width: 640px){
     .website{
-        display: block;
+    background-color: var(--bg-color-black-100), 0.8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
 }
+
+.group{
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .mobile{
     display: none;
 }

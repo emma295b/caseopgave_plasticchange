@@ -49,6 +49,7 @@ import "../styles/globalstyle.css";
 
 
 <section class="website">
+    <div class="grid">
         <div>
             <img src="public/pictures/Logowebsite.webp" alt="logo single use">
         </div>
@@ -86,7 +87,8 @@ import "../styles/globalstyle.css";
                 <a href="https://www.instagram.com/plasticchange"><img src="public/icons/instagram.svg" alt="instagram link"></a>
             </div>
         </div>
-    <div>
+    </div>
+    <div class="bottles">
         <img src="public/pictures/plastikbottles.webp" alt=" plastic bottles decorations">
     </div>
 </section>
@@ -137,15 +139,16 @@ p, a{
 
 @media screen and (min-width: 640px){
     .website{
-    display: block;
     background-color: var(--bg-color-black-100);
-    padding: var(--padding-size-medium);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;;
+    display: block;
+}
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: var(--padding-size-xlarge);
+    padding-inline: var(--padding-size-xxlarge);
 }
 .mobile{
     display: none;

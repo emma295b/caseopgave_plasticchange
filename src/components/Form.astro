@@ -74,6 +74,19 @@ p{
 
 @media screen and (min-width: 640px){
 
+    section{
+    padding: var(--padding-size-xxlarge);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+   
+}
+    .content{
+        margin: auto;
+        width: 80%;
+        padding: var(--padding-size-medium);
+        grid-area: 1 / 2 / 2 / 4;
+    }
 }
 
 </style>

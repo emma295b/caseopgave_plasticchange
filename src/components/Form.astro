@@ -1,0 +1,79 @@
+---
+import "../styles/globalstyle.css";
+import Button from "../components/Button.astro"
+---
+
+<section>
+    <div class="content">
+        <div>
+            <h2>
+                Tilmeld dig vores nyhedsbrev
+            </h2>
+            <p>
+                I vores nyhedsbrev kan du holde dig opdateret om bl.a 
+                vores kamp imod plastikforurening. Vi holder dig også opdateret på vigtige verdensbegivender relateret til vores arbejde. 
+            </p>
+        </div>
+        <form>
+            <div class="form">
+                <div>
+                    <input type="text" id="navn" name="navn" value="Skriv dit navn">
+                </div>
+            
+                <div>  
+                    <input type="email" id="email" name="email" value="Skriv dit email">
+                </div>
+            </div>
+            <div class="button">
+                <Button variant="secondary">Tilmeld mig</Button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<style>
+section{
+    padding: var(--padding-size-xlarge);
+    padding-block: var(--padding-size-xxlarge);
+   
+}
+
+.content{
+    padding: var(--padding-size-medium);
+    background-color: var(--bg-color-black-80);
+}
+
+.form div{
+    padding-block: var(--padding-size-small);
+}
+
+input{
+    border-radius: var(--border-radius-form);
+    color: var(--text-color-gray-100);
+    padding: var(--padding-size-small);
+    font-family: "Paragraph";
+    font-size: var(--paragraph-size-small);
+    border: none;
+    width: 100%;
+}
+
+.button{
+    padding-block: var(--padding-size-small);
+    display: flex;
+    justify-content: flex-end;
+}
+
+h2{
+    color: var(--text-color-white-100);
+}
+
+p{
+    color: var(--text-color-white-100);
+}
+
+@media screen and (min-width: 640px){
+
+}
+
+</style>

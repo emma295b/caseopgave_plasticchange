@@ -9,7 +9,7 @@ import Button from "../components/Button.astro"
             Vi kan ikke løse verdnes problemer alene.
         </h2>
         <p>
-            Skal du være med?
+            <strong>Skal du være med?</strong>
         </p>
         <p>
             Bliv en del af Plastic Change og vær med til at gøre en forskel for vores miljø.
@@ -31,7 +31,7 @@ section{
     background-position: center;
     padding: var(--padding-size-xlarge);
 }
-section .content {
+.content {
     background-color: var(--bg-color-black-80);
     color: var(--text-color-white-100);
     padding: var(--padding-size-medium);
@@ -58,16 +58,18 @@ p, a{
 }
 
 @media screen and (min-width: 640px){
-.secondsection{
+section{
     background-image: url("public/pictures/skilpadde2.webp");
     background-size: cover;
     background-position: center;
-    padding: var(--padding-size-xlarge);
+    padding: 10%;
 }
-.secondsection .content {
+.content {
     background-color: var(--bg-color-black-80);
     color: var(--text-color-white-100);
-    padding: var(--padding-size-medium);
+    padding: var(--padding-size-large);
+    margin: auto;
+    width: 50%;
 }
 
 img{

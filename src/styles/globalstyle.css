@@ -1,8 +1,7 @@
 :root{
 
 --bg-color-black-100: #1C1E23;
---bg-color-black-80: #36373a;
---bg-color-black-50: #1C1E23, 0.5;
+--bg-color-black-80: rgba(28, 30, 35, 0.8);
 --bg-color-white-100: #fefefe;
 --text-color-white-100: #fefefe;
 --text-color-black-100: #1c1e23;
@@ -16,6 +15,7 @@
 --header-size-large: 60px;
 --subheader-size-large: 36px;
 --paragraph-size-large: 18px;
+--padding-size-xxlarge: 5.5rem;
 --padding-size-xlarge: 3.75rem;
 --padding-size-large: 2.5rem;
 --padding-size-medium: 1.25rem;
@@ -30,20 +30,19 @@
 
 }
 
-
 @font-face {
     font-family: "Header";
-    src: url(/font/camptonextrabold-webfont.woff2);
+    src: url("public/font/camptonextrabold-webfont.woff2");
 }
 
 @font-face {
     font-family: "Subheader";
-    src: url(/font/camptonmedium-webfont.woff2);
+    src: url("public/font/camptonmedium-webfont.woff2");
 }
 
 @font-face {
     font-family: "Paragraph";
-    src: url(/font/camptonbook-webfont.woff2);
+    src: url("public/font/camptonbook-webfont.woff2");
 }
 
 * {

@@ -2,98 +2,14 @@
 import Mainlayout from "../layout/Mainlayout.astro";
 import Header from "../components/Header.astro";
 import Button from "../components/Button.astro"
+import Firstsection from "../components/Firstsection.astro"
+import Secondsection from "../components/Secondsection.astro"
 import "../styles/globalstyle.css";
 ---
 
 <Mainlayout>
     <Header/>
-    <section class="firstsection">
-            <img src="public/pictures/sael.webp" alt="sael">
-            <div>
-            <h2>
-                Plastikforurening er et grænseløst problem, der påvirker os alle.
-            </h2>
-            <p>
-                Plastic Change går vi forrest i kampen mod forurening af engangplastik som hver dag truer vores hav & jord miljø. Vi ønsker at skabe rammerne for en renere fremtid, bådet globalt og internationalt.
-            </p>
-            <p>
-                Vi arbejder hele tiden med forureningsproblematikkerne fra flere sider. Der skal gøres op med hvordan vi bruger engangsplastik, så vi kan spare på jordens ressourcer når vi producerer, og samtidig forhindre at det ender som affald og forurening, når vi er færdige med det.
-            </p>
-            <Button variant="secondary">Hvad er Plastikforurening?</Button>
-        </div>
-    </section>
-    <section class="secondsection">
-        <div class="content">
-            <h2>
-                Vi kan ikke løse verdnes problemer alene.
-            </h2>
-            <p>
-                Skal du være med?
-            </p>
-            <p>
-                Bliv en del af Plastic Change og vær med til at gøre en forskel for vores miljø.
-            </p>
-            <div>
-                <Button variant="secondary">Hvad kan du være?</Button>
-                <Button variant="primary"
-                icon="public/icons/hjerte.svg">Støt</Button>
-            </div>
-        </div>
-    </section>
+    <Firstsection/>
+    <Secondsection/>
 </Mainlayout>
 
-<style>
-h1{
-    font-family: "Header";
-    font-size: var(--header-size-large);
-}
-
-h2{
-    font-family: "Subheader";
-    font-size: var(--subheader-size-large);
-}
-
-p, a{
-    font-family: "Paragraph";
-    font-size: var(--paragraph-size-large);
-}
-
-img{
-    height: auto;
-    width: 100%;
-}
-
-.firstsection div{
-    padding-block: var(--padding-size-large);
-    padding-inline: var(--padding-size-xlarge);
-}
-
-.secondsection{
-    background-image: url("public/pictures/skilpadde2.webp");
-    background-size: cover;
-    background-position: center;
-    padding: var(--padding-size-xlarge);
-}
-.secondsection .content {
-    background-color: var(--bg-color-black-80);
-    color: var(--text-color-white-100);
-    padding: var(--padding-size-medium);
-}
-
-@media screen and (min-width: 640px) {
-h1{
-    font-family: "Header";
-    font-size: var(--header-size-small);
-}
-
-h2{
-    font-family: "Subheader";
-    font-size: var(--subheader-size-small);
-}
-
-p, a{
-    font-family: "Paragraph";
-    font-size: var(--paragraph-size-small);
-}
-}
-</style>

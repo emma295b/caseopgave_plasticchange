@@ -14,10 +14,12 @@ import Button from "../components/Button.astro"
         <p>
             Bliv en del af Plastic Change og vær med til at gøre en forskel for vores miljø.
         </p>
-        <div>
-            <Button variant="secondary">Hvad kan du være?</Button>
-            <Button variant="primary"
-            icon="public/icons/hjerte.svg">Støt</Button>
+        <div class="button">
+            <div>
+                <Button variant="secondary">Hvad kan du være?</Button>
+                <Button variant="primary"
+                icon="public/icons/hjerte.svg">Støt</Button>
+            </div>
         </div>
     </div>
 </section>
@@ -40,6 +42,11 @@ section{
 img{
     width: 100%;
     height: 100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
 }
 
 /*FONT*/
@@ -66,6 +73,10 @@ section{
     padding: var(--padding-size-large);
     margin: auto;
     width: 50%;
+}
+.button{
+    display: flex;
+    justify-content: center;
 }
 
 img{

@@ -4,7 +4,7 @@ import Button from "../components/Button.astro"
 ---
 
 <section>
-    <div>
+    <div class="content">
          <h2>
                 Plastikforurening er et grænseløst problem, der påvirker os alle.
         </h2>
@@ -16,14 +16,22 @@ import Button from "../components/Button.astro"
         </p>
         <Button variant="secondary">Hvad er Plastikforurening?</Button>
     </div>
-<img src="/pictures/sael.webp" alt="sael">
+    <div class="img">
+        <img src="/pictures/sael.webp" alt="sael">
+    </div>
 </section>
 
 
 
 
 <style>
-section div{
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.content{
     padding-block: var(--padding-size-large);
     padding-inline: var(--padding-size-xlarge);
 }
@@ -31,6 +39,10 @@ section div{
 img{
     width: 100%;
     height: 100%;
+}
+
+.img{
+    grid-area: 1 / 1 / 2 / 2
 }
 
 /*FONT*/
@@ -45,7 +57,11 @@ p, a{
 }
 
 @media screen and (min-width: 640px) {
-section div{
+.img{
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.content{
     grid-area: 1 / 1 / 2 / 3;
 }
 

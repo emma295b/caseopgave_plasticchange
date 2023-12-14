@@ -87,8 +87,31 @@ body {
     }
   }
   
+  .text-shadow-pop-bottom:hover {
+	-webkit-animation: text-shadow-pop-bottom 0.6s both;
+	        animation: text-shadow-pop-bottom 0.6s both;
+}
 
-
+@-webkit-keyframes text-shadow-pop-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+  }
+  @keyframes text-shadow-pop-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+    }
+  }
   
   
 

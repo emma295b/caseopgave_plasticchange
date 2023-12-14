@@ -27,7 +27,9 @@ import Button from "../components/Button.astro";
         <h2>
             Kræv en ambitiøs global plastiktraktat.
         </h2>
-        <Button variant="primary scale-up-center">Skriv under her.</Button>
+        <Button variant="primary scale-up-center">Skriv under her
+
+        </Button>
     </div>
 </section>
 
@@ -77,14 +79,14 @@ p, a{
     grid-column-gap: var(--padding-size-medium);
     background-image: url("/pictures/skilpadde1.webp");
     background-size: cover;
+    background-position: center;
     color: var(--text-color-white-100);
-    padding: var(--padding-size-large);
 }
 
 .content{
     background-color: var(--bg-color-black-80);
-    display: inline-block;
     grid-area: 2 / 1 / 3 / 2;
+    margin: var(--paragraph-size-large);
 }
 
 .mobile{
@@ -106,12 +108,6 @@ p, a{
     font-family: "Paragraph";
     font-size: var(--paragraph-size-large);
 }
-
-img{
-    width: 100%;
-    height: auto;
-}
-
 }
 
 </style>

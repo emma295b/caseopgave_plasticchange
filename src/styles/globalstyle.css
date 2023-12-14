@@ -32,17 +32,17 @@
 
 @font-face {
     font-family: "Header";
-    src: url("public/font/camptonextrabold-webfont.woff2");
+    src: url("/font/camptonextrabold-webfont.woff2");
 }
 
 @font-face {
     font-family: "Subheader";
-    src: url("public/font/camptonmedium-webfont.woff2");
+    src: url("/font/camptonmedium-webfont.woff2");
 }
 
 @font-face {
     font-family: "Paragraph";
-    src: url("public/font/camptonbook-webfont.woff2");
+    src: url("/font/camptonbook-webfont.woff2");
 }
 
 * {

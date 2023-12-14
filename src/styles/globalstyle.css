@@ -56,3 +56,43 @@ body {
     font-family: "Paragraph";
     font-size: var(--paragraph-size);
   }
+
+  /*Animista animationer*/
+  .rotate-in-top:hover {
+	-webkit-animation: rotate-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-in-top {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-in-top {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  

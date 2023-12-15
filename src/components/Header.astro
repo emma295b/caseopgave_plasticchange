@@ -24,14 +24,19 @@ import Button from "../components/Button.astro";
         <div>
             <h1>
                 SKRIV UNDER NU
-            </h1>
-            <h2>
-                Kræv en ambitiøs global plastiktraktat.
-            </h2>
-        </div>
-        <div class="button">
-            <Button variant="primary heartbeat">Skriv under her
-            </Button>
+            </h1> </div>
+            
+            <div class="grid">
+                <div>
+                    <h2>
+                    Kræv en ambitiøs global plastiktraktat.
+                    </h2>
+                </div>
+                <div class="button">
+                    <Button variant="primary heartbeat">Skriv under her
+                    </Button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -97,8 +102,18 @@ p, a{
     display: none;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
 .button{
-    text-align: right;
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 50%;
+    margin-top: auto;
+    padding-block: var(--padding-size-medium);
 }
 
 /*FONT*/
